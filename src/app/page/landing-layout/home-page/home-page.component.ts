@@ -88,7 +88,7 @@ export class HomePageComponent implements AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.initCountUps();
+
   }
 
   countUpFormatter( n: number ) {

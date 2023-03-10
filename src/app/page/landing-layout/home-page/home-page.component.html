@@ -1,6 +1,6 @@
 <div class="hero">
   <div class="hero-left">
-    <h1>Open Template Hub</h1>
+    <h1>{{ BRAND.name }}</h1>
     <p>
       {{ BRAND.bio }}
     </p>
@@ -20,28 +20,7 @@
   </div>
 </div>
 
-<div class="counters">
-  <a [href]="environmentCommon.website.github.url + '/' + environmentCommon.company.social.github"
-     class="counter-wrapper" rel="noopener" target="_blank">
-    <app-text-content-loader *ngIf="npmCounterLoading" [size]="'30'" class="loader"></app-text-content-loader>
-    <p [hidden]="npmCounterLoading" class="counter" id="npmDownloadCounterElement"></p>
-    <p class="description" i18n="@@homePage.npmDownloads">Npm Downloads</p>
-  </a>
-  <a [href]="environmentCommon.website.github.url + '/' + environmentCommon.company.social.github"
-     class="counter-wrapper counter-alter" rel="noopener" target="_blank">
-    <app-text-content-loader *ngIf="githubCounterLoading" [size]="'30'" class="loader"></app-text-content-loader>
-    <p [hidden]="githubCounterLoading" class="counter" id="totalStarsCounterElement">0</p>
-    <p class="description" i18n="@@homePage.totalStars">Total GitHub Stars</p>
-  </a>
-  <a [href]="environmentCommon.website.github.url + '/' + environmentCommon.company.social.github"
-     class="counter-wrapper" rel="noopener" target="_blank">
-    <div class="ratio">
-      <p class="counter" id="openSourceRatioCounterElement">0</p>
-      <span class="counter">%</span>
-    </div>
-    <p class="description" i18n="@@homePage.openSourceRatio">Open Source Ratio</p>
-  </a>
-</div>
+
 
 <!-- Testimonials -->
 <oth-hero [contents]="testimonialsTitle"></oth-hero>
